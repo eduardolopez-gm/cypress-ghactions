@@ -37,7 +37,7 @@ describe('example to-do app', () => {
   it('can add new todo items', () => {
     // We'll store our item text in a variable so we can reuse it
     const newItem = 'Feed the cat'
-
+    const newItem2 = 'Test with Cypress'
     // Let's get the input element and use the `type` command to
     // input our new list item. After typing the content of our item,
     // we need to type the enter key as well in order to submit the input.
@@ -54,7 +54,7 @@ describe('example to-do app', () => {
     cy.get('.todo-list li')
       .should('have.length', 3)
       .last()
-      .should('have.text', newItem)
+      .should('have.text', newItem2)
   })
 
   it('can check off an item as completed', () => {
