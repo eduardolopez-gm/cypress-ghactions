@@ -1,2 +1,6 @@
-# Ignora la carpeta node_modules
+# Ignore the node_modules
 node_modules
+
+# Ignore test failures
+cypress\videos
+cypress\screenshots
