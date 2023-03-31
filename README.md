@@ -1,25 +1,22 @@
 
-# Cypress Github Actions 
+# Cypress GHActions 
 
-Simple example to setup Github Actions with Cypress and publish results after run.
+Welcome to the Cypress GHActions repository! This repository is a simple example of how to set up Cypress end-to-end tests to run automatically using GitHub Actions.
 
+## Requirements
+Before you can use this repository, you must have the following installed on your system:
+    Node.js
+    Git
 
+## Installation
 
-## Run Locally
-
-Clone the project
+Clone this repository onto your local machine using the following command:
 
 ```bash
   git clone https://github.com/eduardolopez-gm/cypress-ghactions.git
 ```
 
-Go to the project directory
-
-```bash
-  cd cypress-ghactions
-```
-
-Install dependencies
+Install the dependencies by navigating into the cypress-ghactions directory and running:
 
 ```bash
   npm install
@@ -29,14 +26,17 @@ After that, you should have installed project dependencies and you will be ready
 
 ## Running Tests
 
-To open Cypress in interactive mode 
+To run the tests locally 
+In interactive mode 
 ```bash
   npm run cy:open
 ```
-To open Cypress in headless mode run 
+In headless mode run 
 ```bash
   npm run cy:run 
 ```
+
+To run the tests in the GitHub Actions workflow, simply push changes to this repository, and the workflow will automatically start.
 
 ## Authors
 
